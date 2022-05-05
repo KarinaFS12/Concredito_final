@@ -47,7 +47,7 @@
             {!! $errors->first('rfc', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
-        {{ Form::label('Archivos') }}
+        {{ Form::label('Carga Documentos') }}
                 <div class="input-group hdtuto control-group lst increment" >
                     <input type="file" name="filenames[]" class="myfrm form-control">
                     <div class="input-group-btn"> 
@@ -67,7 +67,6 @@
 
     </div>
     <div></div>
-    <br>
     <div class="d-grid gap-2 d-md-block">
     <a class="btn btn-danger" href="{{ route('prospectos.index') }}"> Regresar</a>
         <button type="submit" class="btn btn-success"> Enviar</button>
@@ -78,7 +77,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript">
-
     $(document).ready(function() {
       $(".btn-success").click(function(){ 
           var lsthmtl = $(".clone").html();
@@ -88,5 +86,4 @@
           $(this).parents(".hdtuto").remove();
       });
     });
-
 </script>
